@@ -1,0 +1,283 @@
+
+:root{
+    --background-green: #0F4D5A;
+}
+
+body{
+    font-family:sans-serif;
+}
+.tego{
+    background-color: var(--background-green);
+    height:100vh;
+}
+
+.navbar-tego{
+    background-color: #7AE9EA;
+    width:max-content;
+}
+.nav-link{
+    color: #0F4D5A;
+    font-weight:800;
+    font-size:23px;
+}
+/* how are  */
+.how_are{
+    background-color: #9CAEA9;
+}
+.how_are p {
+    color: #110101;
+    font-weight: 300;
+    font-size: 40px;
+}
+.how_are .para{
+    background-color: #EFECEC ;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+.how_are p span{
+    font-size: 50px;
+    font-weight: 600;
+    color: #110101;
+}
+/* end how are you  */
+/* start cards */
+.carousel-inner {
+    padding: 1em;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+  }
+  .card .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .card img {
+      max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }
+.cards{
+    background-color:#9CAEA9 ;
+}
+.card{
+    background-color:#9CAEA9;
+}
+.card-title{
+    background-color: #0F4D5A;
+    width: auto;
+    border-radius: 10px;
+    padding: 5px;
+    color: #EFECEC;
+}
+/* end cards */
+/* start services */
+.services{
+    background-color:#9CAEA9;
+}
+.card{
+ box-shadow: none;
+}
+.serv .card-title{
+    color: #0F4D5A;
+    font-weight: 600;
+    font-size:40px ;
+}
+
+
+/* start flib */
+.big_title{
+    background-color:#9CAEA9;
+}
+.services{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background: #9CAEA9;
+}
+.card_s{
+    position:relative;
+    width:450px;
+    height:450px;
+    margin:20px ;
+}
+
+.card_s .face{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    backface-visibility: hidden;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.5s;
+}
+
+.card_s .front  {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000 ;
+}
+
+.card_s .front img{
+    position: absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.card_s .front h2 {
+    position:absolute ;
+    bottom:0;
+    width:100%;
+    height:45px; 
+    line-height:45px;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.4);
+    text-align:center;
+}
+
+.card_s .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:rgb(3,35,54);
+    padding: 15px ;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align:center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card_s .back .link{
+    border-top:solid 1px #f3f3f3;
+    height:50px;
+    line-height:50px;
+}
+
+.card_s .back .link a{
+    color:#f3f3f3 ; 
+}
+
+.card_s .back h2 {
+    font-size:30px;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+.card_s .back p { 
+    letter-spacing: 1px;
+    font-size:24px;
+}
+
+.card_s:hover .front{
+    transform:perspective(600px) rotateY(180deg);
+}
+
+
+.card_s:hover .back{
+    transform:perspective(600px) rotateY(360deg);
+}
+
+
+/* end flib */
+
+
+
+
+
+
+
+/* end services */
+/* start comments and complaints */
+.comments{
+    background-color: #9CAEA9 ;
+}
+.complaints{
+    color: #000000;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.feedback{
+    background-color:#EFECEC ;
+    border-radius: 10px;
+    font-size: 40px;
+
+}
+.form{
+    background-color:#EFECEC ;
+    border-radius: 10px;
+}
+.form-control{
+    background-color:#9CAEA9 ;
+}
+::placeholder {
+    font-size: 30px; /* Adjust the font size to your preference */
+  }
+/* end comments and complaints */
+/* start footer */
+.footer{
+    background-color: #0F4D5A;
+    color: white;
+    height:80vh;
+    position: relative;
+}
+/* end footer  */
+.h1-f{
+    border-bottom: #000000;
+
+}
+
+.background {
+    /* For a solid color background (rectangle) */
+   
+    
+    /* For an image background */
+    /* background-image: url('path-to-your-image.jpg'); */
+    
+    /* Control the background size */
+    /* background-size: cover; */
+    
+    /* Control the background position (centered horizontally and vertically) */
+    background-position: center center;
+    
+    /* Control the background repeat behavior */
+    background-repeat: no-repeat;
+    
+    /* Set the background to cover the entire viewport */
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Place the background behind other content */
+  }
